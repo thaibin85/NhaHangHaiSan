@@ -54,9 +54,9 @@ namespace NhaHangHaiSan
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "248312247617087",
+               appSecret: "d56f9434121ecc2a5d31111780b4b1a2");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
