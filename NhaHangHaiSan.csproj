@@ -169,6 +169,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -180,9 +181,22 @@
     <Compile Include="Migrations\202304271958013_CreateDatabase.designer.cs">
       <DependentUpon>202304271958013_CreateDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202304281643555_UpdateCategory.cs" />
+    <Compile Include="Migrations\202304281643555_UpdateCategory.designer.cs">
+      <DependentUpon>202304281643555_UpdateCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304281656114_UpdateCommonAbsTract.cs" />
+    <Compile Include="Migrations\202304281656114_UpdateCommonAbsTract.designer.cs">
+      <DependentUpon>202304281656114_UpdateCommonAbsTract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304281710175_AddAlias.cs" />
+    <Compile Include="Migrations\202304281710175_AddAlias.designer.cs">
+      <DependentUpon>202304281710175_AddAlias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CommonAbstract.cs" />
+    <Compile Include="Models\Common\Filter.cs" />
     <Compile Include="Models\EF\Order.cs" />
     <Compile Include="Models\EF\OrderDetail.cs" />
     <Compile Include="Models\EF\Posts.cs" />
@@ -191,7 +205,6 @@
     <Compile Include="Models\EF\Subcribe.cs" />
     <Compile Include="Models\EF\Contact.cs" />
     <Compile Include="Models\EF\Category.cs" />
-    <Compile Include="Models\EF\MonAn.cs" />
     <Compile Include="Models\EF\ProductCategory.cs" />
     <Compile Include="Models\EF\Adv.cs" />
     <Compile Include="Models\EF\SystemSetting.cs" />
@@ -2363,6 +2376,9 @@
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_sidebar.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Edit.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2445,6 +2461,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202304271958013_CreateDatabase.resx">
       <DependentUpon>202304271958013_CreateDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304281643555_UpdateCategory.resx">
+      <DependentUpon>202304281643555_UpdateCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304281656114_UpdateCommonAbsTract.resx">
+      <DependentUpon>202304281656114_UpdateCommonAbsTract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304281710175_AddAlias.resx">
+      <DependentUpon>202304281710175_AddAlias.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
