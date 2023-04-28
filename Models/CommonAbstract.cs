@@ -10,6 +10,7 @@ namespace NhaHangHaiSan.Models
     public abstract class CommonAbstract
     {
         public string CreateBy { get; set; }
+        public DateTime ModifidedDate { get; set; }
         public DateTime CreateDate { get; set; }
         public string ModifidedBy { get; set; }
     }
